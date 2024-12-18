@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script>
+        let cart = [];
+
+        function addToCart(product) {
+            cart.push(product);
+            alert(`${product.name} telah ditambahkan ke keranjang!`);
+            console.log(cart); // Untuk debugging, bisa dihapus nanti
+        }
+    </script>
+</head>
+<body class="bg-pink-100">
+        <nav>
+          <div class="awal"> 
+             <div class="Brand">
+                 <a haref=''>Beauté Bliss</a>
+             </div>
+           </div>
+             <div>
+                 <ul>    
+                     <li><a href="p2.html" class="Profil">Profil</a></li>
+                     <li><a href="p3.html" class="Produk">Produk</a></li>
+                     <li><a href="p4.html" class="Saran">Saran</a></li>
+                 </ul>
+             </div>
+        </nav>
+    </header>
+    <main class="p-6">
+        <h2 class="text-xl font-bold">Daftar Produk Makeup</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+            <!-- Produk 1 -->
+            <div class="bg-white p-4 rounded shadow-md">
+                <img src="produk1.jpeg" alt="cushion" class="w-300 h-300 object-cover rounded">
+                <h3 class="text-lg font-semibold mt-2">Wardah Renew You Skincare </h3>
+                <p class="text-gray-700">Paket Wardah Renew You Skincare Anti Aging 4 pcs
+                  Perawatan Wajah Wardah Anti Penuaan
+                  1 paket terdiri dari:
+                  UKURAN BESAR:
+                 <p>- Wardah Renew You Skincare Anti Aging Intensive Serum 17 ml,</p>
+                  <p>- Wardah Renew You Skincare Anti Aging Night Cream 30 ml</p>
+                  <p>- Wardah Renew You Skincare Anti Aging Day Cream 30 ml</p>
+                  <p>- Wardah Renew You Skincare Anti Aging Facial Wash 100 ml</p>
+                  100% original
+                  Disarankan untuk usia 30 tahun keatas
+                  dengan tipe kulit kering
+                  
+                  Packing free bubble wrap dan dus
+                  happy shopping beauty ...
+                  </p>
+                <p class="font-bold mt-2">Rp 237.000</p>
+                <button onclick="addToCart({name: 'Wardah Renew You Skincare', price: 80000})" class="mt-4 w-full bg-pink-600 text-white font-bold py-2 rounded hover:bg-pink-700">Tambah ke Keranjang</button>
+            </div>
+            <!-- Produk 2 -->
+            <div class="bg-white p-4 rounded shadow-md">
+                <img src="produk2.jpeg" alt="Foundation" class="w-300 h-300 object-cover rounded">
+                <h3 class="text-lg font-semibold mt-2">Radiance Glow 5in1 Complete Skincare Package</h3>
+                <p class="text-gray-700">Radiance Glow Toner Essence, Radiance Glow Illuminating Serum, Radiance Glow Purifying Facial Foam, Radiance Glow Advanced Day Cream, Radiance Glow Active Night Gel.
+                  Manfaat
+                  <p>•	Mengurangi tampilan kulit kusam, untuk kulit cerah bercahaya</p>
+                  <p>•	Menjaga hidrasi dan kelembapan kulit</p>
+                  <p>•	Menyegarkan kulit tanpa rasa lengket dan cepat meresap</p>
+                  <p>•	Melindungi kulit dari kerusakan akibat sinar UV</p>
+                  <p> •	Menenangkan kulit</p>
+                  </p>
+                <p class="font-bold mt-2">Rp 369.000</p>
+                <button onclick="addToCart({name: 'Radiance Glow 5in1 Complete Skincare Package', price: 150000})" class="mt-4 w-full bg-pink-600 text-white font-bold py-2 rounded hover:bg-pink-700">Tambah ke Keranjang</button>
+            </div>
+            <!-- Produk 3 -->
+            <div class="bg-white p-4 rounded shadow-md">
+                <img src="produk3.jpeg" alt="Eyeshadow Palette" class="w-300 h-300 object-cover rounded">
+                <h3 class="text-lg font-semibold mt-2">Lipstik Liquid SuperStay Matte Ink</h3>
+                <p class="text-gray-700"> Lipstik Liquid SuperStay Matte Ink 'memberi Anda hasil akhir matte sempurna dalam berbagai nuansa super
+                  Maybelline SuperStay Matte Ink - Super Stay Matte Ink Lip Cream Tahan Lama 16 Jam Terbaru
+                 <p>- Tahan Lama</p>
+                 <p>- Warna Menarik </p>
+                 <p>- Original</p>
+                 <p>- Superstay Matte Ink</p>
+                  </p>
+                <p class="font-bold mt-2">Rp 80.000</p>
+                <button onclick="addToCart({name: 'Lipstik Liquid SuperStay Matte Ink', price: 85.000})" class="mt-4 w-full bg-pink-600 text-white font-bold py-2 rounded hover:bg-pink-700">Tambah ke Keranjang</button>
+            </div>
+           <!-- Produk 4 -->
+               <div class="bg-white p-4 rounded shadow-md">
+               <img src="produk4.jpeg" alt="Eyeshadow Palette" class="w-300 h-300 object-cover rounded">
+               <h3 class="text-lg font-semibold mt-2">Aroma segar, wangi tahan 8-12 jam 
+                tidak berbekas di pakaian. 
+                Mengharumkan badan, memberi rasa percaya diri
+                </p>
+               <p class="font-bold mt-2">Rp 18.000</p>
+              <button onclick="addToCart({name: 'Brasov Parfum 35ml - Eau De Parfum Signature Parfum Spray', price: 80.000})" class="mt-4 w-full bg-pink-600 text-white font-bold py-2 rounded hover:bg-pink-700">Tambah ke Keranjang</button>
+            </div>
+        </div>
+        <div>
+          <h2><a href="index.html" class="tblp2"> Beranda</a></h2>
+     </div>
+    </main>
+    <footer class="text-center p-4 bg-pink-200">
+        <p>&copy; Beauté Bliss</p>
+    </footer>
+</body>
+</html>
